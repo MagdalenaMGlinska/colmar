@@ -15,7 +15,7 @@
         <img src="./resources/images/ic-logo.svg" alt='Colmar Academy logo'>
         <span>COLMAR</span><span>ACADEMY</span>
       </div>
-      <nav class="desktop">
+      <nav>
         <ul>
           <li><a href=#>On Campus</a></li>
           <li><a href=#>Online</a></li>
@@ -23,14 +23,7 @@
           <li><a href=#>Sign in</a></li>
         </ul>
       </nav>
-      <nav class="mobile">
-        <ul>
-          <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
-          <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
-          <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
-          <li><a href="#" class="button">Join us</a></li>
-        </ul>
-      </nav>
+    
 
     <!--Section 1 Learn something new -->
     <section>
@@ -53,89 +46,146 @@
 
     <!--Section 2 - It Does not hurt -->
     <section>
+      <div id="practice">
+
+        <div class="main-story">
+          <div class="main-pic">
+            <img src="./resources/images/information-main.jpg" alt="student reading">
+          </div>
+          <div class="description">
+            <h1>It doesn't hurt to keep practicing</h1>
+            <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,nec consequat neque.
+              Sed non accumsan urna.
+              Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula"</p>
+            <br /><br />
+            <p>Emanuel, Sr Strategist at Hiring.com</p>
+          </div>
+        </div>
+
+        <div class="side-stories"> <!--this div contains all three side stories-->
+          <div class="orientation"> <!--first side story-->
+            <div class="pic">
+              <img src="./resources/images/information-orientation.jpg" alt="Orientation dates">
+            </div>
+            <div class="description-side">
+              <h1>Orientation date</h1>
+              <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
+              <br><br>
+              <a href="#">Read more</a>
+            </div>
+          </div> <!--end of the first side story-->
+          <div class="our-campus">
+            <div class="pic">
+              <img id="campus" src="./resources/images/information-campus.jpg" alt="information-campus">
+            </div>
+            <div class="description-side">
+              <h1>Our Campus</h1>
+              <p>Find which campus is close by you</p>
+              <br><br>
+              <a href="#">Read more</a>
+            </div>
+          </div> <!--end of the second side story-->
+          <div id="highlited" class="guest-lecture">
+            <div class="pic">
+              <img src="./resources/images/information-guest-lecture.jpg" alt="information-guest-lecture">
+            </div>
+            <div class="description-side">
+              <h1>Our guest lecture</h1>
+              <p>Find which campus is close by you</p>
+              <br><br>
+              <a href="#">Read more</a>
+            </div>
+          </div> <!--end of the third side story-->
+        </div>
+      </div> <!--end of main1-->
     </section>
 
-    <!-- Section 3 - Start Learning -->
-    <div id="courses-section">
-      <div class="courses">
-        <div class="center">
-          <div class="image-container">
-            <img src="./resources/images/fcourse-software.jpg" alt="course software engineering">
-          </div>
-          <div class="content">
-            <h2>Software engineering</h2>
-            <h3>COURSES</h3>
-            <p>Web Development, Mobile Development, iOT, APIs</p>
-          </div>
-        </div>
-      </div>
 
-      <div class="courses">
-        <div class="center">
-          <div class="image-container">
-            <img src="./resources/images/course-computer-art.jpg" />
-          </div>
-          <div class="content">
-            <h2>Computer art</h2>
-            <h3>COURSES</h3>
-            <p>Imaging &amp; Design, Web Design, Motion Graphics&amp;Visual Effects, Computer Animation</p>
-          </div>
-        </div>
-      </div>
+    <!-- Section 3 - Courses - Start Learning -->
+    <section>
+      <div id="courses-section">
 
-      <div class="courses">
-        <div class="center">
-          <div class="image-container">
-            <img src="./resources/images/course-design.jpg" />
-          </div>
-          <div class="content">
-            <h2>Design</h2>
-            <h3>COURSES</h3>
-            <p>User Experience Design, User Research, Visual Design</p>
+        <div class="courses">
+          <div class="center">
+            <div class="image-container">
+              <img src="./resources/images/course-software.jpg" alt="course software engineering">
+            </div>
+            <div class="content">
+              <h2>Software engineering</h2>
+              <h3>COURSES</h3>
+              <p>Web Development, Mobile Development, iOT, APIs</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="courses">
-        <div class="center">
-          <div class="image-container">
-            <img src="./resources/images/fcourse-software.jpg" alt="course software engineering">
-          </div>
-          <div class="content">
-            <h2>Software engineering</h2>
-            <h3>COURSES</h3>
-            <p>Web Development, Mobile Development, iOT, APIs</p>
+        <div class="courses">
+          <div class="center">
+            <div class="image-container">
+              <img src="./resources/images/course-computer-art.jpg" />
+            </div>
+            <div class="content">
+              <h2>Computer art</h2>
+              <h3>COURSES</h3>
+              <p>Imaging &amp; Design, Web Design, Motion Graphics&amp;Visual Effects, Computer Animation</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="courses">
-        <div class="center">
-          <div class="image-container">
-            <img src="./resources/images/fcourse-software.jpg" alt="course software engineering">
-          </div>
-          <div class="content">
-            <h2>Software engineering</h2>
-            <h3>COURSES</h3>
-            <p>Web Development, Mobile Development, iOT, APIs</p>
+        <div class="courses">
+          <div class="center">
+            <div class="image-container">
+              <img src="./resources/images/course-design.jpg" />
+            </div>
+            <div class="content">
+              <h2>Design</h2>
+              <h3>COURSES</h3>
+              <p>User Experience Design, User Research, Visual Design</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="courses">
-        <div class="center">
-          <div class="image-container">
-            <img src="./resources/images/fcourse-software.jpg" alt="course software engineering">
-          </div>
-          <div class="content">
-            <h2>Software engineering</h2>
-            <h3>COURSES</h3>
-            <p>Web Development, Mobile Development, iOT, APIs</p>
+        <div class="courses">
+          <div class="center">
+            <div class="image-container">
+              <img src="./resources/images/course-data.jpg" />
+            </div>
+            <div class="content">
+              <h2>Data</h2>
+              <h3>COURSES</h3>
+              <p>Data Science, Big Data, SQL, Data Visualization</p>
+            </div>
           </div>
         </div>
-      </div>
+
+        <div class="courses">
+          <div class="center">
+            <div class="image-container">
+              <img src="./resources/images/course-business.jpg" />
+            </div>
+            <div class="content">
+              <h2>Business</h2>
+              <h3>COURSES</h3>
+              <p>Product Development, Business Development, Startup</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div class="center">
+            <div class="image-container">
+              <img src="./resources/images/course-design.jpg" />
+            </div>
+            <div class="content">
+              <h2>Marketing</h2>
+              <h3>COURSES</h3>
+              <p>Analytics, Content Marketing, Mobile Marketing</p>
+            </div>
+          </div>
+        </div>
 
     </div>
+  </section>
+
 
 
 

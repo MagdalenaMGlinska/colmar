@@ -136,66 +136,75 @@ color:#45434C;
 
 
 
-/*Section 2 It doesn't hurt , Sr Strategist*/
-#practice {
+/*Section 2 It doesn't hurt , main story & side stories*/
+.practice {
   width: 100%;
   background-color: white;
+  color: blue;
   padding: 4rem 0 0 1.5rem;
   display: flex;
   justify-content: space-around;
 }
 
-.main-story {
-  width: 60%;
+.practice .content-box:last-child {
+  background-color: #374A72;
+  color:#C0C0C0;
 }
 
-.main-pic img {
+.multi-box{
+  width:100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.main-story-box {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.main-story-box img {
   width: 98%;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  margin-bottom: 32px;
   /*padding-left: 1.5rem;*/
 }
 
-.description h1{
+.main-story-box h2{
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  padding: 0 0 24px 0;
 }
 
-.description p {
+.main-story-box p {
   font-size: 1.20rem;
 }
+
+
 .side-stories {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.orientation, .our-campus, .guest-lecture {
-  display: flex;
-}
-
-.pic {
   width: 35%;
-  margin-top: 2rem;
-  margin-left: 2rem;
+  display: flex;
+  flex-flow: column;
+  vertical-align: top;
+  align-items: center;
+  margin-top: 16px;
 }
 
-.pic img {
-  width: 100%;
+
+.story-box {
+  display: flex;
 }
 
-#highlited {
-  background-color: #D3D3D3;
-  margin-top: 2.2rem;
+.story-box img {
+  width: 35%;
+  margin:3.5%;
+  vertical-align: middle;
+  display: inline-block;
 }
 
-.guest-lecture img {
-  margin-bottom: 2.2rem;
-}
 
-#campus {
-  margin-top: 1.5rem;
+.story-box .description-side{
+  width:56%;
 }
 
 
@@ -204,8 +213,15 @@ color:#45434C;
   margin-left: 1rem;
 }
 
-.description-side a {
-  color: blue;
+
+.story-box a{
+  color:#B27A3C;
+  padding-left:0;
+}
+
+
+#mobile-pic{
+  display:none;
 }
 
 
@@ -234,7 +250,7 @@ color:#45434C;
 
 .course-container{
   width:30%;
-  height:296px;
+  height:300px;
   margin: 0 8px 16px 8px;
   background-color: white;
 }
@@ -249,6 +265,7 @@ color:#45434C;
 
 .course-text{
   padding:16px 0 0 16px;
+  height: 190px;
 }
 
 /* links in the course boxes are only active in the mobile display */
@@ -276,31 +293,201 @@ p{
 
 
 
+.thesis{
+  background-color: #C0C0C0;
+  color:#374A72;
+  width:100%;
+}
+
+.thesis .content-box:first-child{
+  background-color: #374A72;
+  color:#C0C0C0;
+}
+
+.thesis h2{
+  text-align: center;
+}
+
+video{
+  width:100%;
+  margin-bottom: 32px;
+}
+
+.thesis .main-story-box {
+  padding: 16px 16px 24px 24px;
+}
 
 
-/******************************************************************/
-/* The course offering container and individual course            */
-/* description boxes are styled below.                            */
-/******************************************************************/
+
+footer{
+  background-color: white;
+  border-top: 1px solid darkgray;
+  margin: auto 1%;
+  display: flex;
+  justify-content: space-between;
+  position:relative;
+  top:64px;
+}
+
+footer h5{
+  padding: 16px 24px;
+  margin-bottom: 24px;
+}
+
+footer nav{
+  align-self: auto;
+  padding-top: 16px;
+}
+
+footer span{
+  padding-left: 16px;
+}
 
 
 
 
+/* tablet devices*/
 
+@media only screen and (max-width:825px){
 
-
-@media only screen and (max-width: 760px) {
-  #courses-section {
-    flex-flow: column;
-    padding: 0;
+  .main-section img, .main-story-box{
+    width:45%;
+  }
+  .main-section .description-side{
+    width: 40%;
+  }
+  .course-container, .side-stories{
+    width:45%;
   }
 
-  .courses {
-    margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
-  }
+}
 
-  .courses .content {
-    padding: 1.25rem 0 1.875rem 0;
-  }
+/* tablet devices*/
+@media only screen and (max-width:625px) {
+
+/* below elements that will be turn off from the desktop version of the site */
+footer nav, .desktop-nav, .logo, .main-section img, .practice .main-story-box,
+.thesis .side-stories, .thesis p, .thesis h3, .course-container img,
+.course-container p, #desktop-pic{
+  display:none;
+}
+
+/* menu bar changes into icons */
+.mobile-nav{
+  display:flex;
+  justify-content: space-around;
+  width:100%;
+}
+
+
+/* changes to the main-section area */
+
+
+.mobile-crest{
+  width:100%;
+  height:180px;
+  display:flex;
+  justify-content: center;
+  background-color: #374A72;
+  align-items: center;
+}
+
+.mobile-crest img{
+  height:160px;
+  padding:0 24px;
+}
+
+.mobile-crest h3{
+  font-family: "Graduate";
+  writing-mode:vertical-rl;
+  text-orientation: upright;
+}
+
+.button{
+  width:80%;
+  align-self: center;
+}
+
+.main-section .description-side{
+  width:100%;
+  padding: 32px 16px;
+  margin:auto;
+  box-sizing: border-box;
+}
+
+/* changes to the practice area - second section */
+.side-stories, .story-box .description-side{
+  width:100%;
+}
+
+.story-box{
+  display:flex;
+  flex-flow: column;
+}
+
+#mobile-pic{
+  display:block;
+  box-sizing: border-box;
+  padding: 16px 16px 24px 16px;
+}
+
+.story-box img{
+  width:100%;
+  margin:auto;
+}
+
+.story-box .description-side{
+  box-sizing: border-box;
+  padding-left: 32px;
+}
+
+.practice .story-box:last-child{
+  background-color: #C0C0C0;
+  color:#374A72;
+  margin-bottom: 32px;
+}
+
+
+/* changes to the courses area - third section */
+
+.courses-pack{
+  flex-flow: column;
+}
+
+.course-container{
+  width:100%;
+  height:auto;
+  padding:0;
+  margin:0 0 8px 0;
+}
+
+.course-text{
+  padding:16px;
+}
+
+.course-container h3{
+  display:none;
+}
+
+.course-container a{
+  display:block;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  padding:0;
+}
+
+
+/* changes to thesis section. Detail boxes are removed.*/
+.thesis .main-story-box{
+  width:100%;
+  padding: 0 0 32px 0;
+}
+
+video{
+  margin:auto;
+}
+
+/* footer changes */
+h5{
+  margin:24px 0 0 0;
 }

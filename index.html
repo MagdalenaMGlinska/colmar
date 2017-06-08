@@ -50,59 +50,53 @@
 
 
     <!--Section 2 - It Does not hurt -->
-    <section>
-      <div id="practice">
+    <section class="practice">
+        <div class="multi-box">
 
-        <div class="main-story">
-          <div class="main-pic">
+          <div class="main-story-box">
             <img src="./resources/images/information-main.jpg" alt="student reading">
-          </div>
-          <div class="description">
-            <h1>It doesn't hurt to keep practicing</h1>
+            <h2>It doesn't hurt to keep practicing</h2>
             <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,nec consequat neque.
               Sed non accumsan urna.
               Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula"</p>
-            <br /><br />
-            <p>Emanuel, Sr Strategist at Hiring.com</p>
+            <h5>Emanuel, Sr Strategist at Hiring.com</h5>
           </div>
-        </div>
 
-        <div class="side-stories"> <!--this div contains all three side stories-->
-          <div class="orientation"> <!--first side story-->
-            <div class="pic">
-              <img src="./resources/images/information-orientation.jpg" alt="Orientation dates">
-            </div>
-            <div class="description-side">
-              <h1>Orientation date</h1>
-              <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
-              <br><br>
-              <a href="#">Read more</a>
-            </div>
-          </div> <!--end of the first side story-->
-          <div class="our-campus">
-            <div class="pic">
-              <img id="campus" src="./resources/images/information-campus.jpg" alt="information-campus">
-            </div>
-            <div class="description-side">
-              <h1>Our Campus</h1>
-              <p>Find which campus is close by you</p>
-              <br><br>
-              <a href="#">Read more</a>
-            </div>
-          </div> <!--end of the second side story-->
-          <div id="highlited" class="guest-lecture">
-            <div class="pic">
-              <img src="./resources/images/information-guest-lecture.jpg" alt="information-guest-lecture">
-            </div>
-            <div class="description-side">
-              <h1>Our guest lecture</h1>
-              <p>Find which campus is close by you</p>
-              <br><br>
-              <a href="#">Read more</a>
-            </div>
+
+          <div class="side-stories"> <!--this div contains all three side stories-->
+            <div class="story-box"> <!--first side story - Orientation-->
+              <img id="desktop-pic" src="./resources/images/information-orientation.jpg" alt="students walking">
+              <img id="mobile-pic" src="./resources/images/information-orientation-mobile.jpg" alt="students walking">
+              <div class="description-side">
+                <h3>Orientation date</h3>
+                <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
+                <a href="#">Read more</a>
+              </div>
+            </div> <!--end of the first side story-->
+
+            <div class="story-box"> <!--second side story - Our Campus-->
+              <img id="desktop-pic" src="./resources/images/information-campus.jpg" alt="studying at the coffee shop">
+              <img id="mobile-pic" src="./resources/images/information-campus-mobile.jpg" alt="studying at the coffee shop">
+              <div class="description-side">
+                <h3>Our Campus</h3>
+                <p>Find which campus is close by you</p>
+                <a href="#">Read more</a>
+              </div>
+            </div> <!--end of the second side story-->
+
+          <div class="story-box">
+              <img id="desktop-pic" src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sacks">
+              <img id="mobile-pic" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sacks">
+              <div class="description-side">
+                <h3>Our guest lecture</h3>
+                <p>Find which campus is close by you</p>
+                <a href="#">Read more</a>
+              </div>
           </div> <!--end of the third side story-->
-        </div>
-      </div> <!--end of main1-->
+
+        </div> <!--end of Side-stories-->
+
+      </div> <!--end of multi-box-->
     </section>
 
 
@@ -176,6 +170,52 @@
 
         </div>
       </section>
+
+      <section class="thesis">
+        <h2>Thesis Exhibits</h2>
+        <div class="multi-box">
+
+          <div class="main-story-box">
+            <video src="./resources/videos/thesis.mp4" controls alt="video"></video>
+            <h3>Reimagine Urban</h3>
+            <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,nec consequat neque.
+              Sed non accumsan urna.
+              Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula"</p>
+          </div>
+
+          <div class="side-stories"> <!--this div contains 2 side stories-->
+            <div class="story-box"> <!--first side story - FISMA security project -->
+              <img src="./resources/images/thesis-fisma.jpg" alt="student while studying">
+              <div class="description-side">
+                <h3>FISMA: Design and Security</h3>
+                <p>Designer showcase of new prototype project</p>
+              </div>
+            </div> <!--end of the first side story-->
+
+            <div class="story-box"> <!--second side story - Research-->
+              <img src="./resources/images/thesis-now-and-then.jpg" alt="NYC Empire State Building">
+              <div class = "description-side">
+                <h3>Now and Then</h3>
+                <p>Research study about New York</p>
+              </div>
+            </div> <!--end of the second side story-->
+          </div>
+        </div>
+
+      </section>
+
+
+      <footer>
+      <h5>&copy; 2016 Colmar Academy. All rights reserved</h5>
+      <nav>
+        <div class = "legal">
+          <span>Terms</span>
+        </div>
+        <div class = "legal">
+          <span>Privacy</span>
+        </div>
+      </nav>
+    </footer>
 
   </body>
 </html>

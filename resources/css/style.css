@@ -9,70 +9,70 @@ body {
 }
 
 main{
-  background-color: #5573B2;
-  position:relative;    /* position under fixed menu bar */
-  top:64px;
+  background-color: #ffffff;
+  position:relative;
   width:100%;
 }
 
 /*Styling the header*/
 
 header{
-  background-color: white;
+  background-color: #ffffff;
   height: 64px;
   width: 100%;
-  border-bottom: solid 1px grey;
+  border-bottom: solid 1px white;
   display: flex;
   justify-content: space-between;
   position: fixed;
   z-index: 10;
 }
 
-/*school logo*/
+/*colmar academy logo*/
 header img{
-  height: 48px;
-  padding-left: 24px;
+  height: 50px;
+  padding-left: 1.5rem;
 }
 
-/* logo plus stylized name */
+/* the positioning of logo and its' stylized name */
 .logo{
   display:flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* stylized school name in the logo */
+/* stylying the Colmar Academy name in the logo */
 .header-title{
   font-family: "Verdana", sans-serif;
   font-weight: 400;
-  color: black;
+  color: #000000;
 }
 
 .thin-title{
   font-weight: 200;
-  color:#C0C0C0;
+  color:#A9A9A9;
 }
 
-/******************************************************************/
-/* Navigation items:                                              */
-/*   desktop-nav is text-based - active for larger screens        */
-/*   mobile-nav is icon-based - active for smaller screens        */
-/******************************************************************/
+
+/* Navigation items */
+/*  desktop-nav is text-based & mobile-nav is icon-based */
 nav{
   padding-right:3%;
   align-self: center;
   display:flex;
   justify-content: space-between;
-
 }
 
 .desktop-nav a{
-  padding: 0px 16px;
+  padding: 0px 1rem;
 }
 
 a{
   text-decoration: none;
-  color: #C0C0C0;
+  color: #A9A9A9;
+}
+
+nav a:active {
+  color: #000000;
 }
 
 .mobile-nav{
@@ -82,13 +82,12 @@ a{
 
 /*Learn something new... - first section*/
 
-
 .main-section {
   position: relative;
-  top: 4rem;
-  background-color: #D3D3D3;
+  top: 2rem;
+  background-color: #e7e4e5;
   display: flex;
-  color: black;
+  color: #808080;
   padding: 2rem 0 2rem 1.5rem;
 }
 
@@ -96,7 +95,8 @@ a{
   display:inline-block;
   vertical-align: middle;
   width: 60%;
-  margin: 32px 40px 32px 24px;
+  height: auto;
+  margin: 2rem 2.5rem 2rem 1.5rem;
 }
 
 .side-text {
@@ -115,6 +115,16 @@ a{
   font-weight: normal;
 }
 
+.side-text h1:hover {
+  font-weight: bold;
+  color: midnightblue;
+}
+.side-text h1{
+  transition-duration: 1.5s;
+  transition-timing-function: linear;
+  transition-delay: 0.5s;
+}
+
 .side-text h3 {
   margin: 24px 0;
   padding: 0.4rem 0;
@@ -123,8 +133,8 @@ a{
 }
 
 .button {
-  background-color: #4a4a4a;
-  color: white;
+  background-color: #fcf974;
+  color: #808080;
   font-size: 1.2rem;
   text-align: center;
   padding-top: 1rem;
@@ -136,8 +146,8 @@ a{
 }
 
 .button:hover{
-background-color: #B27A3C;
-color:#45434C;
+background-color: #de3643;
+color:#A9A9A9;
 }
 
 
@@ -145,16 +155,16 @@ color:#45434C;
 /*Section 2 It doesn't hurt , main story & side stories*/
 .practice {
   width: 100%;
-  background-color: white;
-  color: blue;
+  background-color: #ffffff;
+  color: #808080;
   padding: 4rem 0 0 1.5rem;
   display: flex;
   justify-content: space-around;
 }
 
-.practice .content-box:last-child {
-  background-color: #374A72;
-  color:#C0C0C0;
+.practice .story-box:last-child {
+  background-color: #e7e4e5;
+  color:#808080;
 }
 
 .multi-box{
@@ -193,7 +203,8 @@ color:#45434C;
   flex-flow: column;
   vertical-align: top;
   align-items: center;
-  margin-top: 16px;
+  margin-top: 1rem;
+  padding-top: 2rem;
 }
 
 
@@ -217,6 +228,7 @@ color:#45434C;
 .description-side {
   margin-top: 3rem;
   margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 
@@ -256,7 +268,7 @@ color:#45434C;
 
 .course-container{
   width:30%;
-  height:300px;
+  height:auto;
   margin: 0 8px 16px 8px;
   background-color: white;
 }

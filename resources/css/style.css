@@ -8,6 +8,12 @@ body {
   margin: 0;
 }
 
+main{
+  background-color: #5573B2;
+  position:relative;    /* position under fixed menu bar */
+  top:64px;
+  width:100%;
+}
 
 /*Styling the header*/
 

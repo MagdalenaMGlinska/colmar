@@ -99,7 +99,7 @@ nav a:hover {
   display: block;
   vertical-align: middle;
   width: 60%;
-  height: auto;
+  height: 90%;
   margin: 2rem 2.5rem 2rem 1.5rem;
 }
 
@@ -209,7 +209,7 @@ letter-spacing: .25rem;
 }
 
 .side-stories {
-  width: 35%;
+  width:35%;
   display: flex;
   flex-flow: column;
   vertical-align: top;
@@ -221,10 +221,14 @@ letter-spacing: .25rem;
   display: inline-flex;
   flex-flow: row;
   align-self: center;
+  width: 100%;
+  height: auto;
 }
+
 
 .story-box img {
   width: 35%;
+  height: 90%;
   margin:3.5%;
   display: block;
 }
@@ -232,14 +236,13 @@ letter-spacing: .25rem;
 
 .description-side{
   width:60%;
-  display: inline-flex;
+  display: flex;
   flex-flow: column;
   align-self: center;
   margin: 0;
   padding-bottom: .5rem;
   padding-right: .5rem;
 }
-
 
 .description-side h3{
   padding: 0;

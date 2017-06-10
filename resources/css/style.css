@@ -224,20 +224,36 @@ color:#A9A9A9;
 
 .description-side{
   width:60%;
+  display: inline-flex;
+  flex-flow: column;
+  align-self: center;
+  margin: 0;
+  padding-bottom: .5rem;
+  padding-right: .5rem;
 }
 
 
-.description-side {
-  margin-top: 0rem;
-  margin-left: 0rem;
-  margin-right: 0rem;
-  padding-bottom: .5rem;
+.description-side h3{
+  padding: 0;
+  margin: 0;
 }
 
 
 .story-box a{
   color:#B27A3C;
   padding-left:0;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
+.story-box a:active {
+  color: #000000;
+}
+
+.story-box p{
+  padding-left:0;
+  padding-bottom: 1rem;
+  margin: 0;
 }
 
 
@@ -286,6 +302,13 @@ color:#A9A9A9;
 .course-text{
   padding:1rem 0rem 0rem 1rem;
   height: 190px;
+  margin: 0;
+  transition:color 600ms, background-color 600ms;
+}
+
+.course-text:hover{
+background-color: #e7e4e5;
+color:#404040;
 }
 
 /* links in the course boxes are active only in mobile */
@@ -346,26 +369,29 @@ footer{
   border-top: 1px solid #C0C0C0;
   display: flex;
   justify-content: space-between;
-  position:relative;
   font-family: 'Open-Sans', sans-serif;
 }
 
 footer h5{
-  padding: .5rem 1.5rem;
-  margin-bottom: 1.5rem;
+  padding: 0 1.5rem;
+  font-weight: normal;
+  margin-top: 1rem;
+  font-size: .8rem;
 }
 
 footer nav{
-  align-self: auto;
+  display: flex;
+  align-self: flex-start;
+  font-family: 'Open-Sans', sans-serif;
 }
 
 footer span{
-  padding: .5rem 1.5rem .5rem .5rem;
+  padding-right: .5rem;
   margin-bottom: 1.5rem;
+  font-size: .8rem;
+  margin-top: 1rem;
+  font-weight: normal;
 }
-
-
-
 
 
 /* tablet devices*/
@@ -384,7 +410,7 @@ footer span{
 
 }
 
-/* tablet devices*/
+/* Mobile devices*/
 @media only screen and (max-width:625px) {
 
 /* below elements that will be turn off from the desktop version of the site */
@@ -394,7 +420,7 @@ footer nav, .desktop-nav, .logo, .main-section img, .practice .main-story-box,
   display:none;
 }
 
-/* menu bar changes into icons */
+/* menu bar in mobile version changes into icons */
 .mobile-nav{
   display:flex;
   justify-content: space-around;
@@ -404,37 +430,45 @@ footer nav, .desktop-nav, .logo, .main-section img, .practice .main-story-box,
 
 /* changes to the main-section area */
 
-
-.mobile-crest{
-  width:100%;
-  height:180px;
-  display:flex;
-  justify-content: center;
-  background-color: #374A72;
-  align-items: center;
-}
-
-.mobile-crest img{
-  height:160px;
-  padding:0 24px;
-}
-
-.mobile-crest h3{
-  font-family: "Graduate";
-  writing-mode:vertical-rl;
-  text-orientation: upright;
-}
-
 .button{
-  width:80%;
+  width:90%;
   align-self: center;
 }
 
-.main-section .description-side{
+.main-section{
   width:100%;
-  padding: 32px 16px;
+  height:auto;
+  display:flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #e7e4e5;
+  align-items: center;
+}
+
+.side-text{
+  width:90%;
+  height:auto;
+}
+
+.main-section img{
+  width: 100%;
+  height: auto;
+  padding:0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+ .description-side{
+  width:100%;
+  padding: 16px 16px;
   margin:auto;
   box-sizing: border-box;
+}
+
+.description-side h3{
+  margin: 0;
 }
 
 /* changes to the practice area - second section */
@@ -464,8 +498,8 @@ footer nav, .desktop-nav, .logo, .main-section img, .practice .main-story-box,
 }
 
 .practice .story-box:last-child{
-  background-color: #C0C0C0;
-  color:#374A72;
+  background-color: #ffffff;
+  color:#808080;
   margin-bottom: 32px;
 }
 
@@ -484,7 +518,16 @@ footer nav, .desktop-nav, .logo, .main-section img, .practice .main-story-box,
 }
 
 .course-text{
+  width: 100%;
+  height: auto;
   padding:16px;
+  color: #909090;
+  transition:color 600ms, background-color 600ms;
+}
+
+.course-text:hover{
+background-color: #D3D3D3;
+color:#303030;
 }
 
 .course-container h3{
@@ -511,5 +554,5 @@ video{
 
 /* footer changes */
 h5{
-  margin:24px 0 0 0;
+  margin:2rem 0 1rem 0;
 }

@@ -433,7 +433,7 @@ footer span{
 @media only screen and (max-width:625px) {
 
 /* below elements that will be turn off from the desktop version of the site */
-footer nav, .desktop-nav, .logo, .main-section img, .practice .main-story-box,
+footer nav, .desktop-nav, .logo, .practice .main-story-box,
 .thesis .side-stories, .thesis p, .thesis h3, .course-container img,
 .course-container p, #desktop-pic{
   display:none;
@@ -479,48 +479,50 @@ footer nav, .desktop-nav, .logo, .main-section img, .practice .main-story-box,
 }
 
 
- .description-side{
-  width:100%;
-  padding: 16px 16px;
-  margin:auto;
-  box-sizing: border-box;
-}
-
-.description-side h3{
-  margin: 0;
-}
-
 /* changes to the practice area - second section */
-.side-stories, .story-box .description-side{
+.side-stories{
   width:100%;
-}
-
-.story-box{
-  display:flex;
+  display: flex;
   flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 }
 
-#mobile-pic{
-  display:block;
+.story-box #mobile-pic{
+  width:100%;
+  height: auto;
+  display:flex;
+  flex-direction: column;
   box-sizing: border-box;
   padding: 1rem 1rem .5rem 1rem;
 }
 
-.story-box img{
-  width:100%;
-  margin:auto;
+.practice .description-side{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 4rem;
+  width: 100%;
+  height: auto;
 }
 
-.story-box .description-side{
-  box-sizing: border-box;
-  padding-left: 32px;
+.story-box{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
 }
-
 .practice .story-box:last-child{
   background-color: #ffffff;
   color:#808080;
   margin-bottom: 32px;
 }
+
+
 
 
 /* changes to the courses area - third section */
